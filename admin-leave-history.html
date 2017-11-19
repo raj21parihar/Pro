@@ -21,7 +21,7 @@
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="index.html"># Name System</a>
+    <a class="navbar-brand" href="index.html">SARAL</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -44,10 +44,7 @@
               <a href="#">Employee's Record</a>
             </li>
 			<li>
-              <a href="#l">Check Status</a>
-            </li>
-            <li>
-              <a href="#l">Generate Report</a>
+              <a href="#l">Leave History</a>
             </li>
           </ul>
         </li>
@@ -156,12 +153,33 @@
         <li class="breadcrumb-item">
           <a href="#">Dashboard</a>
         </li>
-        <li class="breadcrumb-item active">Employee's Record</li>
+        <li class="breadcrumb-item active">Leave History</li>
       </ol>
+	  
+	
+	  <form class="form-inline col-sm-12" action="#">
+    <div class="form-group">
+      <label class="control-label col-sm-5" for="start">Start Date</label>
+      <input type="date" class="col-sm-7  form-control" id="email" placeholder="Enter Start Date" name="email">
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4" for="end"> End Date</label>
+      <input type="date" class="col-sm-8  form-control" id="pwd" placeholder="Enter End Date" name="pwd">
+    </div>
+	<div class="form-group">
+    <span class="control-label col-sm-6" style="padding-left:50px">
+	  <button type="submit" class=" btn btn-default">Show Details</button>
+	  </span>
+      
+    </div>
+	
+  </form>
+	 <hr> 
+	  
       <!-- Example DataTables Card-->
       <div class="card mb-3">
         <div class="card-header">
-          <i class="fa fa-table"></i> Employee Detail</div>
+          <i class="fa fa-table"></i> Leave History between two dates</div>
         <div class="card-body">
           <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -195,7 +213,7 @@
                   <td>Edinburgh</td>
                   <td>61</td>
                   <td>2011/04/25</td>
-                  <td>$320,800</td>
+                  <td><button type="submit" class="btn btn-primary btn-sm">Details</button></td>
                 </tr>
                 <tr>
                   <td>112311</td>
@@ -204,7 +222,7 @@
                   <td>Tokyo</td>
                   <td>63</td>
                   <td>2011/07/25</td>
-                  <td>$170,750</td>
+                  <td><button type="submit" class="btn btn-primary btn-sm">Details</button></td>
                 </tr>
                 <tr>
                   <td>112311</td>
@@ -213,7 +231,7 @@
                   <td>San Francisco</td>
                   <td>66</td>
                   <td>2009/01/12</td>
-                  <td>$86,000</td>
+                  <td><button type="submit" class="btn btn-primary btn-sm">Details</button></td>
                 </tr>
                 <tr>
                   <td>112311</td>
