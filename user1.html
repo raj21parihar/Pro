@@ -14,6 +14,7 @@
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
+    
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -153,12 +154,128 @@
         </li>
         <li class="breadcrumb-item active">Blank Page</li>
       </ol>
-      <div class="row">
-        <div class="col-12">
-          <h1>Blank</h1>
+   <div class="row">
+        <div class="col-lg-8">
+          <!-- leave req form-->
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fa fa-pencil-square-o"></i> Leave Request Form</div>
+            <div class="card-body">
+              
+			  <div class="container">
+				<form class="form-horizontal">
+								
+				
+				<div class="form-group row">
+				  <label class="col-md-3 control-label" for="textinput">Start Date</label>  
+				  <div class="col-md-7">
+				  <input id="textinput" name="textinput" type="date" placeholder="" class="form-control input-md" >
+				</div>
+
+				</div>
+				
+				<div class="form-group row">
+				  <label class="col-md-3 control-label" for="textinput">End Date</label>  
+				  <div class="col-md-7">
+				  <input id="textinput" name="textinput" type="date" placeholder="" class="form-control input-md" >
+				</div> 
+
+				</div>
+				
+				
+				<div class="form-group row">
+				  <label class="col-md-3 control-label" for="">Absence Type</label>
+				  <div class="col-md-7">
+					<select id="" name="" class="form-control">
+					  <option value="">Earned Leave</option>
+					  <option value="">Compensatory Off</option>
+					  <option value="">Loss of Pay</option>
+					  <option value="">Maternity Leave</option>
+					  <option value="">Paternity Leave</option>
+					  <option value="">Adoption/ Ward Leave</option>
+					  <option value="">Bereavement Leave</option>
+					  <option value="">Contigency Leave</option>
+					</select>
+				  </div>
+				</div>
+
+				<!-- Multiple Radios -->
+				<div class="form-group row">
+				  <label class="col-md-3 control-label" for="radios">Day(s)</label>
+				  <div class="col-md-7">
+				  <div class="radio">
+					<label for="radios-0">
+					  <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+					  Full Day
+					</label>
+					</div>
+				  <div class="radio">
+					<label for="radios-1">
+					  <input type="radio" name="radios" id="radios-1" value="0.5">
+					  First Half
+					</label>
+					</div>
+				  <div class="radio">
+					<label for="radios-2">
+					  <input type="radio" name="radios" id="radios-2" value="0.5">
+					  Second Half
+					</label>
+					</div>
+				  </div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group row">
+				  <label class="col-md-3 control-label" for="textinput">Duration</label>  
+				  <div class="col-md-2">
+				  <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" disabled>
+				</div><span class="help-block">Days</span>  
+
+				</div>
+
+				<!-- Button -->
+				<div class="form-group row">
+				  <label class="col-md-3 control-label" for="singlebutton"></label>
+				  <div class="col-md-7">
+					<button id="singlebutton" name="singlebutton" class="btn btn-info">Calculate Leave Duration</button>
+				  </div>
+				</div>
+
+				<!-- Textarea -->
+				<div class="form-group row">
+				  <label class="col-md-3 control-label" for="textarea">Reason</label>
+				  <div class="col-md-7">                     
+					<textarea class="form-control" id="textarea" name="textarea">Enter Comment</textarea>
+				  </div>
+				</div>
+
+				<!-- Button (Double) -->
+				<div class="form-group row">
+				  <label class="col-md-4 control-label" for="sub"></label>
+				  <div class="col-md-8">
+					<button id="sub" name="sub" class="btn btn-success">Submit</button>
+					<button id="cancel" name="cancel" class="btn btn-danger">Cancel</button>
+				  </div>
+				</div>
+				</form>
+
+				</div>
+			</div>
+           
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <!-- Example Pie Chart Card-->
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fa fa-calendar"></i> Calendar</div>
+            <div class="card-body">
+              <canvas id="myPieChart" width="100%" height="100"></canvas>
+            </div>
+          
+          </div>
         </div>
       </div>
-    </div>
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
     <footer class="sticky-footer">
