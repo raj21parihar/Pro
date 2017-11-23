@@ -301,15 +301,13 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
     #mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level {
       background: #f8f9fa; } }
 
-.card-body-icon {
+.card-body-num {
   position: absolute;
-  z-index: 0;
-  top: -25px;
-  right: -25px;
-  font-size: 5rem;
-  -webkit-transform: rotate(15deg);
-  -ms-transform: rotate(15deg);
-  transform: rotate(15deg); }
+ 
+  top: 0px;
+  right: 10px;
+  font-size: 3rem;
+  }
 
 @media (min-width: 576px) {
   .card-columns {
